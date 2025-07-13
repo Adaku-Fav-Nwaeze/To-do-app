@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit task</title>
+</head>
+<body>
+    <h1>Edit task</h1>
+    <form method="POST">
+        <label for="title">Task Title:</label>
+        <input type="text" id="title" name="title" value="{{ task.title }}" required>
+        <button type="submit">Update</button>
+    </form>
+
+    <a href="{{ url_for('todo') }}">← Back to Todo List</a>
+</body>
+</body>
+</html>
